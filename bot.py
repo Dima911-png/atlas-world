@@ -24,7 +24,7 @@ log = logging.getLogger("homework-bot")
 
 TG = os.getenv("TELEGRAM_BOT_TOKEN", "").strip()
 AI = os.getenv("GROQ_API_KEY", "").strip()
-MODEL = os.getenv("GROQ_MODEL", "qwen/qwen3.6-27b").strip()
+MODEL = os.getenv("GROQ_MODEL", "qwen/qwen3.8-27b").strip()
 MAX_BYTES = 10 * 1024 * 1024
 
 INSTRUCTIONS = """
