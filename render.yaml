@@ -2,12 +2,13 @@ services:
   - type: worker
     name: homework-photo-telegram-bot
     runtime: docker
-    plan: free
+    plan: starter
     dockerfilePath: ./Dockerfile
+    autoDeploy: true
     envVars:
       - key: TELEGRAM_BOT_TOKEN
         sync: false
-      - key: GEMINI_API_KEY
+      - key: GROQ_API_KEY
         sync: false
-      - key: GEMINI_MODEL
-        value: gemini-2.5-flash
+      - key: GROQ_MODEL
+        value: qwen/qwen3.8-27b
